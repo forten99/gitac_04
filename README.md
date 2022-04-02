@@ -11,6 +11,7 @@
 - 버전관리 소프트웨어 : Git
 - Git 웹 서비스 : Github
 - https://victorydntmd.tistory.com/74
+- https://github.com/edu-ministori/gitac_04
 
 - Git 버전관리 프로세스
   - 준비단계
