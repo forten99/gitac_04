@@ -6,6 +6,7 @@
 
   - Text Contents
   - Image, Video, Audio Contents
+    -　Embed(ed) Contents
 
 - Structure
 
@@ -111,9 +112,110 @@ WYSIWYG(What You See Is What You Get : 네가 보는 것이 얻는 것이다)
   
 - a(nchor) : 하이퍼링크 연결 태그
 - href(hypertext reference) : 목적지 정보 속성(attribute)
+- bookmark
+  - 연결된 페이지로 이동하지 않고, 같은 페이지내에서 위아래 이동
 
 ```
+- page link
 <a href="url">텍스트</a>
+
+- bookmark
+
+- link
+<a href="#target">목적지</a>
+
+- target
+<h2 id="target">단락 제목</h2>
+
 ```
 
 - URL(Uniform Resource Locator) : 파일 위치 식별자 
+
+- 인터넷 주소체계
+  - IP(Internet Protocol) address : 인터넷에서 사용하는 주소
+  - Domain name : IP 주소를 영어단어로 표현
+    - 서버종류 : www (web server)
+    - 회사이름 : naver, daum...
+    - 기관성격 : com, net (3자리) / co, go, ac (4자리)
+    - 국가(4자리) : kr, uk, ca, fr ...
+
+
+```
+- IP : 0~255까지 숫자 4개로 구성
+Ex) 192.168.0.1
+
+- 인터넷 접속 프로세스 : 주소표시줄에 Domain Name 입력 => IP주소로 변환 => 접속
+
+- URL 체계 
+
+IP 또는 Domain 주소/상세경로/파일정보
+Ex) https://www.w3schools.com/html/default.asp
+
+```
+
+### HTML table
+```
+<table> : 테이블 작성
+  <tr> : table row - 행
+    <th></th> : table header - 열 제목
+  </tr>
+  <tr>
+    <td></td> : table data - 데이터
+  </tr>
+</table>
+```
+
+### HTML List
+
+- ul(Unordered List) : 순서없는 목록
+  - 기호로 표시
+- ol(Ordered List) : 순서있는 목록
+  - 숫자로 표시(알파벳, 한글)
+- li(List Item) : 목록 아이템
+
+```
+<ul>
+  <li>HTML</li>
+  <li>css</li>
+  <li>JS</li>
+</ul>
+
+<ol>
+  <li>HTML</li>
+  <li>css</li>
+  <li>JS</li>
+</ol>
+```
+
+- Description List : 설명목록
+  - dl(Description List)
+  - dt(Description title)
+  - dd(Description Data)
+
+```
+<dl>
+  <dt>목록 주제</dt>
+  <dd>목록 설명</dd>
+</dl>
+```
+
+### HTML Image
+
+- img
+- src(source) : 이미지 파일 경로/파일명 표시
+- alt(ernative) : 대체 텍스트
+
+```
+<img src="www.naver.com/html/photo.jpg" alt="이미지 설명">
+
+```
+
+### HTML Video
+
+- video
+
+```
+<video>
+  <source src="www.daum.net/video/movie.mp4" type="video/mp4">
+</video>
+```
