@@ -207,15 +207,118 @@ Ex) https://www.w3schools.com/html/default.asp
 
 ```
 <img src="www.naver.com/html/photo.jpg" alt="이미지 설명">
-
 ```
+
+- 이미지 형식
+  - 비트맵(포토샵), 벡터(일러스트레이터) 이미지
+  - 비트맵 이미지 형식
+    - jpg : 사진
+    - png : 투명 배경
+    - gif : 용량이 작음 - 로고, 애니메이션 
+  - 벡터 이미지
+    - svg 
+
 
 ### HTML Video
 
 - video
-
+  - 이름만 사용하는 attribute는 on/off 기능 형태
+  - controls : 재생 컨트롤을 화면에 표시
+  - autoplay : 자동 재생
+  - muted : 소리 제거
+  
 ```
 <video>
   <source src="www.daum.net/video/movie.mp4" type="video/mp4">
 </video>
 ```
+
+### Youtube Video
+
+- option, parameter(매개변수)
+https://developers.google.com/youtube/player_parameters?hl=ko#autoplay
+
+```
+<iframe src="youtube-url?parameter1=0&parameter2=1&parameter3=0"></frame>
+```
+
+## HTML Structure
+
+### Semantic Element
+
+- Grouping 또는 구분하는 Element를 의미있게 사용
+- 의미있는 grouping Element가 추가
+- Contents Element와 Semantic Element를 목적에 맞게 제대로 구성하는 것이 
+  검색엔진(SEO:Search Engine Optimization)에 웹사이트 관련 정보를 잘 노출시킬 수 있는 방법 중의 하나
+
+- header
+  - 소개 컨텐츠(logo...), 탐색링크(상단메뉴, 검색), 로그인, 언어선택...
+
+- nav(igation)
+  - 메뉴 
+
+- section
+  - 제목, 내용으로 구성된 하나의 영역
+
+- article
+  - 독립적인 글 또는 컨텐츠
+
+- aside
+  - 부수적인 컨텐츠 영역
+
+- footer
+  - 연락처
+  - 사이트맵
+  - 저작권
+  - 연관 링크
+
+- figure
+  - embedded contents 또는 그림형태의 컨텐츠를 grouping 하는 요소
+
+### Container Element
+
+- 단순 구역 나누는 / grouping 하는 요소
+- div(ision)
+- span
+
+## 파일 경로 표시 방식
+
+- 절대 경로 방식
+  - 항상 똑같은 경로(주소) 표시 가능
+  - 주소 표시 방식이 복잡함
+```
+href="www.naver.com/html/home.html"
+
+src="www.instagram.com/html/photo.jpg"
+```
+
+- 상대 경로 방식
+  - 출발 위치 기준에 따라서 상대적으로 경로(주소) 표시 형태가 변경
+  - 같은 자원의 위치에 대해서 표시 방식이 너무 많음
+  - 자원의 위치가 이동하면 주소를 모두 수정해야함
+  - ../ : 한 단계 상위 폴더로 이동
+
+```
+/ - html - home.html
+         - sub.html
+  - images - photo.jpg
+
+위치 기준 : sub.html
+href="hme.html"
+src="../images/photo.jpg"
+```
+
+- root 상대 경로 방식
+  - root : 최상위 경로(/)
+  - root 경로에서부터 찾아갈 수 있도록 상대 경로 방식을 변형
+```
+/ - html - home.html
+         - sub.html
+  - images - photo.jpg
+
+위치 기준 : sub.html
+
+href="/html/home.html"
+src="/images/photo.jpg"
+```
+
