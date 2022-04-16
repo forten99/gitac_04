@@ -349,3 +349,10 @@ src="/images/photo.jpg"
 
 - 요소의 영역이 Contents 또는 자식요소를 기준으로 맞춰짐
 - 요소와 요소는 한 줄에 나란히 표시가 됨
+
+## head 태그
+
+- meta : 웹사이트 추가 정보
+- title : 웹사이트 대표 제목
+- link, script : css, js 파일 불러올 때 사용
+- style, script : css, js 코드를 직접 사용할 때 사용
