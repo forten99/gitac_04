@@ -242,6 +242,19 @@ https://developers.google.com/youtube/player_parameters?hl=ko#autoplay
 <iframe src="youtube-url?parameter1=0&parameter2=1&parameter3=0"></frame>
 ```
 
+### 콘텐츠 강조
+
+- 제목의 역할까지는 아니지만 중요, 강조의미를 가진 텍스트 표시
+
+- em(pasized)
+- strong
+- mark
+
+###
+
+- b(old)
+- i(talic)
+
 ## HTML Structure
 
 ### Semantic Element
@@ -322,3 +335,17 @@ href="/html/home.html"
 src="/images/photo.jpg"
 ```
 
+## Block & Inline
+
+- 구역을 구분하는 Semantic Element, Container Element 뿐만 아니라 Contents를
+표현하는 Element도 화면에 영역으로 표시
+
+### Block Element
+
+- 요소의 영역이 부모요소를 기준으로 가능한 최대 너비로 채워짐
+- 요소와 요소는 줄바꿈되어 새 줄에 표시됨
+
+### Inline Element
+
+- 요소의 영역이 Contents 또는 자식요소를 기준으로 맞춰짐
+- 요소와 요소는 한 줄에 나란히 표시가 됨
